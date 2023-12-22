@@ -1,4 +1,4 @@
-package com.microservice.user.configs;
+package com.microservice.email.configs;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQConfig {
 	
-	@Value("${broker.queue.email.name=default.mail}")
+	@Value("${broker.queue.email.name}")
 	private String queue;
 	
 	@Bean
