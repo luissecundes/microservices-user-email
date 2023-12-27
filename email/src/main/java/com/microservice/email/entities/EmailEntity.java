@@ -28,7 +28,7 @@ public class EmailEntity implements Serializable {
 	@Column(columnDefinition = "TEXT")
 	private String text;
 	private LocalDateTime sendDateEmail;
-	private StatusEmail statusemail;
+	private StatusEmail statusEmail;
 	public UUID getEmailId() {
 		return emailId;
 	}
@@ -72,10 +72,10 @@ public class EmailEntity implements Serializable {
 		this.sendDateEmail = sendDateEmail;
 	}
 	public StatusEmail getStatusemail() {
-		return statusemail;
+		return statusEmail;
 	}
-	public void setStatusemail(StatusEmail statusemail) {
-		this.statusemail = statusemail;
+	public void setStatusEmail(StatusEmail statusEmail) {
+		this.statusEmail = statusEmail;
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
